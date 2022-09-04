@@ -9,3 +9,6 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+
+      - name: build image and push to dockerfile
+        uses: docker/build-push-action@v1.1.0
