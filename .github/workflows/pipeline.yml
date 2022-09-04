@@ -20,5 +20,3 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-
-        run: echo deploy feito com sucesso
