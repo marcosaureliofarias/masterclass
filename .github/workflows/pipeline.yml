@@ -12,3 +12,13 @@ jobs:
 
       - name: build image and push to dockerfile
         uses: docker/build-push-action@v1.1.0
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+        run: echo deploy feito com sucesso
